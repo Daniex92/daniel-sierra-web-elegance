@@ -1,27 +1,27 @@
 const services = [
   {
     number: "01",
-    title: "Diseño Web Profesional",
+    title: "Web Design",
     description:
-      "Interfaces elegantes y funcionales que comunican la esencia de tu marca con claridad visual.",
+      "Elegant and functional interfaces that communicate the essence of your brand with visual clarity.",
   },
   {
     number: "02",
-    title: "Desarrollo Frontend",
+    title: "Frontend Development",
     description:
-      "Código limpio, moderno y escalable. Sitios rápidos, responsivos y optimizados.",
+      "Clean, modern and scalable code. Fast, responsive and optimized websites.",
   },
   {
     number: "03",
-    title: "Presencia Digital",
+    title: "Digital Presence",
     description:
-      "Estrategia integral para posicionar tu marca en el entorno digital con impacto real.",
+      "Integral strategy to position your brand in the digital environment with real impact.",
   },
   {
     number: "04",
-    title: "Producción Visual",
+    title: "Visual Production",
     description:
-      "Contenido fotográfico y visual profesional que eleva la percepción de tu marca.",
+      "Professional photographic and visual content that elevates your brand perception.",
   },
 ];
 
@@ -31,10 +31,10 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-20 fade-up">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">
-            Servicios
+            Services
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-            Lo que puedo hacer por ti
+            What I can do for you
           </h2>
         </div>
 

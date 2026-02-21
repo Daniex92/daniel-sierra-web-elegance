@@ -1,9 +1,9 @@
 const skills = [
-  { name: "HTML5", level: 90 },
-  { name: "CSS3", level: 85 },
-  { name: "JavaScript", level: 75 },
-  { name: "React", level: 70 },
-  { name: "UX/UI Design", level: 80 },
+  { name: "HTML5", level: 70 },
+  { name: "CSS3", level: 75 },
+  { name: "JavaScript", level: 35 },
+  { name: "React", level: 60 },
+  { name: "UX/UI Design", level: 60 },
   { name: "Edición Visual", level: 85 },
 ];
 
@@ -13,10 +13,10 @@ const Skills = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-20 fade-up">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">
-            Habilidades
+            Skills
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-            Stack técnico
+            Technical Stack
           </h2>
         </div>
 

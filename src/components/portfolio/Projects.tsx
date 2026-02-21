@@ -5,26 +5,28 @@ import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
-    title: "Plataforma Académica",
+    title: "Academic Platform",
     description:
-      "Proyecto de grado enfocado en diseño de interfaz y experiencia de usuario para un sistema de gestión educativa moderno.",
+      "The solution structured activities, accommodations, and local services under a clear navigation system, reducing information gaps and simplifying decision-making for visitors.",
     tags: ["UX/UI", "HTML", "CSS", "JavaScript"],
     image: project1,
+    badge: "Expired",
   },
   {
-    title: "E-Commerce Estratégico",
+    title: "Strategic E-Commerce",
     description:
-      "Plataforma de ventas online en desarrollo, diseñada con foco en conversión y una experiencia de compra fluida.",
-    tags: ["React", "Diseño Web", "Estrategia Digital"],
+      "Online sales platform in development, designed with conversion and seamless shopping experience in mind.",
+    tags: ["React", "Web Design", "Digital Strategy"],
     image: project2,
-    badge: "En desarrollo",
+    badge: "In development",
   },
   {
-    title: "Landing Corporativa",
+    title: "Corporate Landing Page",
     description:
-      "Sitio web profesional para marca corporativa con diseño premium, optimizado para rendimiento y posicionamiento.",
-    tags: ["Diseño Web", "Frontend", "SEO"],
+      "Professional website for a corporate brand with premium design, optimized for performance and search engine visibility.",
+    tags: ["Web Design", "Frontend", "SEO"],
     image: project3,
+    badge: "In development",
   },
 ];
 
@@ -34,10 +36,10 @@ const Projects = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-20 fade-up">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">
-            Proyectos
+            Projects
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-            Trabajo seleccionado
+            Selected work
           </h2>
         </div>
 
@@ -80,7 +82,7 @@ const Projects = () => {
                   </div>
                   <button className="self-start inline-flex items-center gap-2 text-sm font-medium text-foreground group/btn">
                     <span className="relative after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-px after:bg-foreground after:scale-x-100 after:origin-left group-hover/btn:after:scale-x-0 after:transition-transform after:duration-500">
-                      Ver proyecto
+                      View project
                     </span>
                     <ArrowUpRight className="w-4 h-4 transition-transform duration-500 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
                   </button>

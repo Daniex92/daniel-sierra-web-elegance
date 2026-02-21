@@ -5,26 +5,25 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-20 items-start max-w-5xl mx-auto">
           <div className="fade-up">
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">
-              Sobre mí
+              About me
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground leading-tight tracking-tight">
-              Estrategia, diseño
-              <br />y código.
+              Strategy, design, and code
+              <br />aligned to create impact.
             </h2>
           </div>
           <div className="fade-up fade-up-delay-1 space-y-6">
             <p className="text-muted-foreground leading-relaxed">
-              Soy Daniel Sierra, diseñador y desarrollador web con base en Bogotá, Colombia.
-              Mi enfoque combina visión estratégica con ejecución técnica para crear
-              experiencias digitales que no solo se ven bien, sino que generan resultados.
+              I’m Daniel Sierra, a web designer and developer based in Bogotá, Colombia.
+              I design and build digital experiences that align aesthetics, functionality, and business strategy.
+              I don’t just create visually appealing websites — I develop platforms built to convert, communicate clearly, and drive measurable impact.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Integro mi experiencia en fotografía y marketing digital como valor diferencial,
-              ofreciendo una perspectiva única donde cada elemento visual tiene un propósito
-              claro y cada línea de código está pensada para escalar.
+             I integrate my background in photography and digital marketing as a strategic advantage in web development.
+I understand visual language and user behavior, which allows every aesthetic decision to serve a purpose and every line of code to be built for scalability, optimization, and long-term growth.
             </p>
             <div className="flex flex-wrap gap-3 pt-4">
-              {["Diseño Web", "Frontend", "Fotografía", "Marketing Digital"].map(
+              {["Web Design", "Frontend Development", "Strategic Photography", "Digital Marketing"].map(
                 (tag) => (
                   <span
                     key={tag}

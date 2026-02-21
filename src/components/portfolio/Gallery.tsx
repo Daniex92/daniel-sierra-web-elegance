@@ -20,10 +20,10 @@ const Gallery = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-20 fade-up">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">
-            Galería
+            Gallery
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-            Visión fotográfica
+            Photography & Visuals
           </h2>
         </div>
 

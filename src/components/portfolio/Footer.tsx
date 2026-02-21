@@ -7,13 +7,19 @@ const Footer = () => {
             © {new Date().getFullYear()} Daniel Sierra — Bogotá, Colombia
           </p>
           <div className="flex items-center gap-8">
-            {["LinkedIn", "Instagram", "Behance"].map((social) => (
+            {[
+              { label: "LinkedIn", url: "https://www.linkedin.com/in/daniel-sierra-683360346/" },
+              { label: "Instagram", url: "https://instagram.com/daniex_photo" },
+              { label: "Git Hub", url: "https://github.com/Daniex92" }
+            ].map((social) => (
               <a
-                key={social}
-                href="#"
+                key={social.label}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-xs tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-500"
               >
-                {social}
+                {social.label}
               </a>
             ))}
           </div>

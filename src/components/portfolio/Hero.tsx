@@ -8,7 +8,7 @@ const Hero = () => {
     >
       <div className="text-center max-w-4xl mx-auto">
         <p className="fade-up text-xs tracking-[0.4em] uppercase text-muted-foreground mb-8">
-          Diseñador & Desarrollador Web
+          Web Designer & Developer
         </p>
         <h1 className="fade-up fade-up-delay-1 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tighter text-foreground mb-8 text-balance">
           Daniel
@@ -16,14 +16,14 @@ const Hero = () => {
           Sierra
         </h1>
         <p className="fade-up fade-up-delay-2 text-lg md:text-xl text-muted-foreground max-w-lg mx-auto mb-12 leading-relaxed font-light">
-          Diseño y desarrollo experiencias digitales que elevan tu marca.
+          I design and develop digital experiences that elevate your brand.
         </p>
         <div className="fade-up fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button variant="hero" size="lg" asChild>
-            <a href="#proyectos">Ver proyectos</a>
+            <a href="#proyectos">View projects</a>
           </Button>
           <Button variant="hero-outline" size="lg" asChild>
-            <a href="#contacto">Contactar</a>
+            <a href="#contacto">Contact</a>
           </Button>
         </div>
       </div>

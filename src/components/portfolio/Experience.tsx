@@ -1,21 +1,27 @@
 const timeline = [
   {
-    period: "2024 — Presente",
-    title: "Diseñador & Desarrollador Web Freelance",
+    period: "2026 — Present",
+    title: "IT Support",
     description:
-      "Creación de presencia digital estratégica para marcas y profesionales. Diseño, desarrollo y optimización web.",
+      "Member of the technical support team at Dialectica, providing specialized assistance and efficient issue resolution within digital environments.",
+  },
+   {
+    period: "2026 — Present",
+    title: "Web Designer",
+    description:
+      "Creation of strategic digital presence for brands and professionals. Design, development and web optimization.",
   },
   {
     period: "2023 — 2024",
-    title: "Marketing Digital & Producción Visual",
+    title: "Digital Marketing & Visual Production",
     description:
-      "Gestión de campañas digitales, creación de contenido visual y estrategia de marca para diversos clientes.",
+      "Management of digital campaigns, creation of visual content and brand strategy for various clients.",
   },
   {
     period: "2022 — 2023",
-    title: "Proyectos Académicos & Personales",
+    title: "Academic & Personal Projects",
     description:
-      "Desarrollo de proyectos de grado y plataformas personales aplicando diseño UX/UI y desarrollo frontend.",
+      "Development of academic projects and personal platforms applying UX/UI design and frontend development.",
   },
 ];
 
@@ -25,10 +31,10 @@ const Experience = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-20 fade-up">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">
-            Experiencia
+            Experience
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-            Trayectoria
+            Career Path
           </h2>
         </div>
 
