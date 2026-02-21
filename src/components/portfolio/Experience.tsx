@@ -21,13 +21,13 @@ const timeline = [
 
 const Experience = () => {
   return (
-    <section id="experiencia" className="py-24 md:py-32 section-alt">
+    <section id="experiencia" className="py-28 md:py-36 section-alt">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16 fade-up">
-          <p className="text-sm tracking-[0.2em] uppercase text-muted-foreground mb-4">
+        <div className="text-center mb-20 fade-up">
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">
             Experiencia
           </p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
             Trayectoria
           </h2>
         </div>
@@ -36,10 +36,10 @@ const Experience = () => {
           {timeline.map((item, i) => (
             <div
               key={item.period}
-              className={`fade-up fade-up-delay-${i + 1} relative pl-8 pb-12 last:pb-0 border-l border-border`}
+              className={`fade-up fade-up-delay-${i + 1} relative pl-8 pb-14 last:pb-0 border-l border-border`}
             >
-              <div className="absolute left-[-5px] top-1 w-2.5 h-2.5 rounded-full bg-muted-foreground/40" />
-              <p className="text-xs tracking-wide text-muted-foreground mb-2">
+              <div className="absolute left-[-3px] top-1.5 w-1.5 h-1.5 rounded-full bg-muted-foreground/60" />
+              <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">
                 {item.period}
               </p>
               <h3 className="text-base font-semibold text-foreground mb-2">
