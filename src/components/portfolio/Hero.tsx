@@ -6,16 +6,17 @@ const Hero = () => {
       id="inicio"
       className="min-h-screen flex items-center justify-center px-6 pt-16"
     >
-      <div className="text-center max-w-3xl mx-auto">
-        <p className="fade-up text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6">
+      <div className="text-center max-w-4xl mx-auto">
+        <p className="fade-up text-xs tracking-[0.4em] uppercase text-muted-foreground mb-8">
           Diseñador & Desarrollador Web
         </p>
-        <h1 className="fade-up fade-up-delay-1 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.1] tracking-tight text-foreground mb-6 text-balance">
-          Diseño y desarrollo experiencias digitales que elevan tu marca.
+        <h1 className="fade-up fade-up-delay-1 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tighter text-foreground mb-8 text-balance">
+          Daniel
+          <br />
+          Sierra
         </h1>
-        <p className="fade-up fade-up-delay-2 text-lg text-muted-foreground max-w-xl mx-auto mb-10">
-          Creo presencia digital estratégica para marcas, empresas y profesionales
-          que buscan destacar con elegancia y propósito.
+        <p className="fade-up fade-up-delay-2 text-lg md:text-xl text-muted-foreground max-w-lg mx-auto mb-12 leading-relaxed font-light">
+          Diseño y desarrollo experiencias digitales que elevan tu marca.
         </p>
         <div className="fade-up fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button variant="hero" size="lg" asChild>
