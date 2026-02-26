@@ -13,7 +13,7 @@ const Hero = () => {
           backgroundImage: `url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1920&q=80')`,
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/90 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/80 to-background" />
 
       <div className="text-center max-w-4xl mx-auto relative z-10">
         <p className="fade-up text-xs tracking-[0.4em] uppercase text-muted-foreground mb-8">
