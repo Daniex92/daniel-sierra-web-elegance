@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero = () => {
   return (
@@ -7,7 +8,13 @@ const Hero = () => {
       className="min-h-screen flex items-center justify-center px-6 pt-16"
     >
       <div className="text-center max-w-4xl mx-auto">
-        <p className="fade-up text-xs tracking-[0.4em] uppercase text-muted-foreground mb-8">
+        <div className="fade-up flex justify-center mb-8">
+          <Avatar className="h-28 w-28 border-2 border-border/50 shadow-lg shadow-black/30">
+            <AvatarImage src="/placeholder.svg" alt="Daniel Sierra" className="object-cover" />
+            <AvatarFallback className="text-2xl font-semibold bg-secondary text-secondary-foreground">DS</AvatarFallback>
+          </Avatar>
+        </div>
+        <p className="fade-up fade-up-delay-1 text-xs tracking-[0.4em] uppercase text-muted-foreground mb-8">
           Web Designer & Developer
         </p>
         <h1 className="fade-up fade-up-delay-1 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tighter text-foreground mb-8 text-balance">
