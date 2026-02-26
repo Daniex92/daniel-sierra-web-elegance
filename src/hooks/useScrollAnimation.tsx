@@ -8,11 +8,14 @@ export const useScrollAnimation = () => {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
           } else {
-            entry.target.classList.remove("visible");
+            const rect = entry.boundingClientRect;
+            if (rect.top < 0) {
+              entry.target.classList.remove("visible");
+            }
           }
         });
       },
-      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -60px 0px" }
     );
 
     const elements = document.querySelectorAll(".fade-up");
