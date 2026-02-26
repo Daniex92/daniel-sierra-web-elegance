@@ -1,20 +1,22 @@
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero = () => {
   return (
     <section
       id="inicio"
-      className="min-h-screen flex items-center justify-center px-6 pt-16"
+      className="min-h-screen flex items-center justify-center px-6 pt-16 relative overflow-hidden"
     >
-      <div className="text-center max-w-4xl mx-auto">
-        <div className="fade-up flex justify-center mb-8">
-          <Avatar className="h-28 w-28 border-2 border-border/50 shadow-lg shadow-black/30">
-            <AvatarImage src="/placeholder.svg" alt="Daniel Sierra" className="object-cover" />
-            <AvatarFallback className="text-2xl font-semibold bg-secondary text-secondary-foreground">DS</AvatarFallback>
-          </Avatar>
-        </div>
-        <p className="fade-up fade-up-delay-1 text-xs tracking-[0.4em] uppercase text-muted-foreground mb-8">
+      {/* Background image with dark gradient overlay */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1920&q=80')`,
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/90 to-background" />
+
+      <div className="text-center max-w-4xl mx-auto relative z-10">
+        <p className="fade-up text-xs tracking-[0.4em] uppercase text-muted-foreground mb-8">
           Web Designer & Developer
         </p>
         <h1 className="fade-up fade-up-delay-1 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tighter text-foreground mb-8 text-balance">
