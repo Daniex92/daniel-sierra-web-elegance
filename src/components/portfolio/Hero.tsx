@@ -8,11 +8,12 @@ const Hero = () => {
     >
       {/* Background image with dark gradient overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed max-md:hidden"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1920&q=80')`,
         }}
       />
+      <div className="absolute inset-0 md:hidden bg-[hsl(var(--section-darker))]" />
       <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/80 to-background" />
 
       <div className="text-center max-w-4xl mx-auto relative z-10">
