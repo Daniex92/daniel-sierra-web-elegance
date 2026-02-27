@@ -1,73 +1,68 @@
-# Welcome to your Lovable project
+# Portfolio - Ender Ramirez
 
-## Project info
+## 🚀 Desplegar en GitHub Pages
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+### Paso 1: Configura el nombre de tu repositorio
 
-## How can I edit this code?
+En `vite.config.ts`, cambia `"/preview/"` por `"/NOMBRE-DE-TU-REPO/"`:
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```ts
+base: mode === "production" ? "/NOMBRE-DE-TU-REPO/" : "/",
 ```
 
-**Edit a file directly in GitHub**
+> Si tu repo se llama `mi-portafolio`, entonces usa `"/mi-portafolio/"`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Paso 2: Genera el build de producción
 
-**Use GitHub Codespaces**
+```sh
+npm install
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Esto creará la carpeta `docs/` con los archivos listos para desplegar.
 
-## What technologies are used for this project?
+### Paso 3: Sube los cambios a GitHub
 
-This project is built with:
+```sh
+git add .
+git commit -m "Build para GitHub Pages"
+git push origin main
+```
 
+### Paso 4: Activa GitHub Pages
+
+1. Ve a tu repositorio en GitHub.
+2. Haz clic en **Settings** → **Pages** (menú lateral izquierdo).
+3. En **Source**, selecciona **Deploy from a branch**.
+4. En **Branch**, selecciona `main` y la carpeta `/docs`.
+5. Haz clic en **Save**.
+
+### Paso 5: Accede a tu sitio
+
+Después de unos minutos, tu sitio estará disponible en:
+
+```
+https://TU-USUARIO.github.io/NOMBRE-DE-TU-REPO/
+```
+
+---
+
+## 🔄 Actualizar el sitio
+
+Cada vez que hagas cambios:
+
+```sh
+npm run build
+git add .
+git commit -m "Actualización del sitio"
+git push origin main
+```
+
+GitHub Pages se actualizará automáticamente.
+
+## Tecnologías
+
+- React + TypeScript
 - Vite
-- TypeScript
-- React
-- shadcn-ui
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- shadcn/ui
