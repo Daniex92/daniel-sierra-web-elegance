@@ -1,27 +1,20 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
+import { defineConfig } from "vite";
+import path from "path";
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  // 'base' debe coincidir con el nombre de tu repositorio en GitHub
-  base: '/preview/', 
+export default defineConfig(({ mode }) => ({
+  // En producción usa el nombre de tu repo; en dev usa "/"
+  base: mode === "production" ? "/preview/" : "/",
 
-  plugins: [react()],
-  
   resolve: {
     alias: {
-      // Lovable suele usar el alias "@" para referirse a la carpeta "src"
       "@": path.resolve(__dirname, "./src"),
     },
   },
 
   build: {
-    // Según tu configuración de GitHub Pages, estás desplegando desde la carpeta "/docs"
-    outDir: 'docs',
-    // Esto limpia la carpeta antes de generar el nuevo build
+    outDir: "docs",
     emptyOutDir: true,
-    // Asegura que los assets se generen con nombres correctos
-    assetsDir: 'assets',
-  }
-})
+    assetsDir: "assets",
+  },
+}));
