@@ -15,7 +15,7 @@ const About = () => {
             </h2>
             <div className="flex items-center gap-5 pt-2">
               <Avatar className="h-20 w-20 border-2 border-border/40 shadow-lg shadow-black/20 shrink-0">
-                <AvatarImage src="src/assets/Profile.png" alt="Daniel Sierra" className="object-cover" />
+                <AvatarImage src="/placeholder.svg" alt="Daniel Sierra" className="object-cover" />
                 <AvatarFallback className="text-lg font-semibold bg-secondary text-secondary-foreground">DS</AvatarFallback>
               </Avatar>
               <div>
